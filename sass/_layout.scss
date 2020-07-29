@@ -40,5 +40,8 @@
     background-image: url(../img/section.jpg);
     background-size: cover;
     background-position: center;
-    height: 400px;
+    display:grid;
+    grid-template-columns: repeat(4,20%);
+    grid-gap: 2rem;
+    justify-content: space-around;
 }

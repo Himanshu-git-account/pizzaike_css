@@ -92,3 +92,47 @@
     margin-right: -3px;
     outline: none;
 }
+
+.card{
+   
+    margin-top:6rem;
+    margin-bottom:6rem;
+    opacity: .7;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: 0rem 2rem 2rem rgba(0, 0, 0, 0.4);
+    transition: all 1s ease-in-out;
+    transform-style: preserve-3d;
+
+    
+    &__front{
+        background-color: $primary-color;
+        padding: 8rem;
+        &__icon{
+            width: 5rem;
+            height: 5rem;
+            fill: white;
+        }
+        &__text{
+            font-size: 2.2rem;
+            color: white;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+    }
+    &__back{
+        background-color: $grey-regular;
+        font-size: 2.2rem;
+        color: white;
+        text-transform: uppercase;
+        font-weight: 500;
+
+    }
+    
+    &:hover{
+        opacity:1;
+        box-shadow: 0rem 2rem 4rem rgba(0, 0, 0, 0.4);
+        transform: rotateY(180deg);
+    }
+
+}
